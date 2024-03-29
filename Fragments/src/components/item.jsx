@@ -1,7 +1,7 @@
-function Item (props){
-  return (
-    <li className="list-group-item">{props.food_item}</li>
-  )
+import styles from "./item.module.css"
+
+function Item ({food_items}){
+  return <li className={`${styles['kg-item']} list-group-item`}><span className={styles['kg-span']}>{food_items}</span></li>
 }
 
 
